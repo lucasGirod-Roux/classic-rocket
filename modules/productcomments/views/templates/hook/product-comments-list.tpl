@@ -27,7 +27,7 @@
   var productCommentUpdatePostErrorMessage = '{l|escape:'javascript' s='Sorry, your review appreciation cannot be sent.' d='Modules.Productcomments.Shop'}';
   var productCommentAbuseReportErrorMessage = '{l|escape:'javascript' s='Sorry, your abuse report cannot be sent.' d='Modules.Productcomments.Shop'}';
 </script>
-<div class="product-comments">
+<section class="product-comments">
 <div class="comments__header" id="product-comments-list-header">
     <div class="comments-nb">
       <i class="material-icons shopping-cart">chat</i>
@@ -56,7 +56,7 @@
       </button>
     {/if}
   </div>
-</div>
+</section>
 {* Appreciation post error modal *}
 {include file='module:productcomments/views/templates/hook/alert-modal.tpl'
   modal_id='update-comment-usefulness-post-error'
