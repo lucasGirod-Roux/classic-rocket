@@ -28,9 +28,9 @@
 
   <section id="main">
     <div class="row">
-      <div class="col-lg-6">
+      <section class="col-lg-6">
         {block name='page_content_container'}
-          <section class="page-content--product" id="content">
+          <div class="page-content--product" id="content">
             {block name='page_content'}
               {block name='product_flags'}
                   {include file='catalog/_partials/product-flags.tpl'}
@@ -42,10 +42,10 @@
 
 
             {/block}
-          </section>
+          </div>
         {/block}
-        </div>
-        <div class="col-lg-6">
+      </section>
+      <section class="col-lg-6">
           {block name='page_header_container'}
             {block name='page_header'}
               <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
@@ -122,7 +122,7 @@
 
 
           </div>
-      </div>
+      </section>
     </div>
 
     {block name='product_accessories'}
