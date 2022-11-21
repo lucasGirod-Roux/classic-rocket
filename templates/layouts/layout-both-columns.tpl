@@ -37,17 +37,18 @@
       {hook h='displayAfterBodyOpeningTag'}
     {/block}
 
-    <main>
-      {block name='product_activation'}
-        {include file='catalog/_partials/product-activation.tpl'}
+    
+    {block name='product_activation'}
+      {include file='catalog/_partials/product-activation.tpl'}
+    {/block}
+
+    <header id="header" class="l-header">
+      {block name='header'}
+        {include file='_partials/header.tpl'}
       {/block}
-
-      <header id="header" class="l-header">
-        {block name='header'}
-          {include file='_partials/header.tpl'}
-        {/block}
-      </header>
-
+    </header>
+    
+    <main>
       {block name='notifications'}
         {include file='_partials/notifications.tpl'}
       {/block}
@@ -91,14 +92,14 @@
         {hook h="displayWrapperBottom"}
       </section>
         {/block}
-
-      <footer id="footer" class="l-footer">
-        {block name="footer"}
-          {include file="_partials/footer.tpl"}
-        {/block}
-      </footer>
-
     </main>
+    <footer id="footer" class="l-footer">
+      {block name="footer"}
+        {include file="_partials/footer.tpl"}
+      {/block}
+    </footer>
+
+    
     {block name='offcanvas_modals'}
         {* offcanvas search filter *}
         <div class="modal fade" id="offcanvas_search_filter" tabindex="-1" role="dialog" data-modal-hide-mobile>
